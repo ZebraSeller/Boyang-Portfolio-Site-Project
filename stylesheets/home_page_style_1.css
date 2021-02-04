@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../Assets/Fonts/Montserrat-Light.otf);
+}
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    /* font-family: allerta stencil;
+    font-family: futura maxi cg Light; */
+    font-family: Montserrat-Light;
+    scroll-behavior: smooth;
+}
+#top-bar {
+    float: left;
+    font-size: 1.6rem;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5%;
+}
+#top-logo-container {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(139, 139, 139, 0);
+}
+#top-logo {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    height: 90%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    animation: moveDownFadeIn 0.5s ease-in;
+}
+@keyframes moveDownFadeIn {
+    0%  {opacity: 0; transform: translateY(-125%);}
+    100%{opacity: 1;}
+}
+#top-logo:hover {
+    filter: brightness(0.5);
+}
+#top-button-container {
+    float: left;
+    position: absolute;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+    background-color:rgba(32, 40, 64, 0);
+}
+.top-bar-button {
+    top: 0%;
+    left: 0%;
+    width: 16.666%;
+    height: 100%;
+    border: none;
+    float: left;
+    font-family: Montserrat-Light;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(32, 40, 64, 0);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.top-bar-button:hover {
+    background-color:rgb(128, 96, 64);
+}
+#main-body {
+    z-index: 0;
+    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    background-color: rgb(32, 40, 64);
+    float: left;
+}
+#main-body-background {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+#main-body-text {
+    position: absolute;
+    color:white;
+    width: 40%;
+    height: 20%;
+    top: 40%;
+    left: 12%;
+    text-shadow: 0px 0px 10px black;
+}
+#boyang-photo {
+    position: absolute;
+    right: 16%;
+    top: 30%;
+    height: 35%;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    filter:brightness(0.95);
+    
+}
+#boyang-photo:hover {
+    transition-duration: 0.5s;
+    filter:brightness(1.15);
+}
+
+#photo-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 256px;
+    background-color: blue;
+}
+#learn-more {
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    text-align:center;
+    font-size: 1.6rem;
+    float: left;
+
+}
+#down-arrow {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    animation: flicker ease-in 3s infinite;
+}
+.down-arrow-imgs {
+    position: absolute;
+    width: 64px;
+}
+@keyframes flicker {
+    0%  {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100%{opacity:0;}
+}
+
+#about-me {
+    background-color:rgb(48, 58, 85);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 150%;
+}
+#about-me-text {
+    position: absolute;
+    color: white;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+}
+#skills {
+    position: absolute;
+    top: 200%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(71, 65, 55);
+}
+#skills p {
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    vertical-align: bottom;
+}
+
+@media screen and (max-aspect-ratio:1/1) {
+    #main-body-background {
+        height: 100%;
+        width: auto;
+    }
+    .top-bar-button {
+        font-size:65%;
+    }
+    #main-body-text {
+        top: 10%;
+        font-size: 1.6rem;
+    }
+    #boyang-photo {
+        position: absolute;
+        left: 12%;
+        top: 50%;
+        height: 30%;
+    }
+    #about-me {
+        font-size: 1.25rem;
+    }
+}
