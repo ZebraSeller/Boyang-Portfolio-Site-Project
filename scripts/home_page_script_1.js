@@ -13,7 +13,7 @@ function jumpToAboutMe() {
 }
 
 function jumpToSkills() {
-    setTimeout(function() {window.scroll(0,innerHeight * 2);},100);
+    setTimeout(function() {window.scroll(0,innerHeight * 1.925);},100);
 }
 function mainBodyScrollUp(yOffset) {
     var opacityFraction = (350 - yOffset) / 280;
@@ -31,4 +31,10 @@ function mainBodyScrollUp(yOffset) {
     document.getElementById("top-button-container").style.backgroundColor = " rgba(32, 40, 64, "+ rGBAFraction +")";
     document.getElementById("about-me").style.backgroundColor = " rgba(48, 58, 85, "+ rGBAFraction +")";
     document.getElementById("main-body-background").style.transform = "scale("+ scaleFraction + "," + scaleFraction + ")";
+}
+function underConstructionAlert() {
+    alert("This page is still under construction!");
+}
+function jumpToArtStation() {
+    window.open("https://zebraseller.artstation.com/albums/2056553");
 }

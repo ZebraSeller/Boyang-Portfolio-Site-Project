@@ -18,17 +18,17 @@
         <div id="top-button-container">
             <button class="top-bar-button" onclick="jumpToAboutMe()">About Me</button>
             <button class="top-bar-button" onclick="jumpToSkills()">Skills</button>
-            <button class="top-bar-button">Portfolio</button>
-            <button class="top-bar-button">Resume</button>
-            <button class="top-bar-button">Links</button>
-            <button class="top-bar-button">Contact Me</button>
+            <button class="top-bar-button" onclick="jumpToArtStation()">Portfolio</button>
+            <button class="top-bar-button" onclick="underConstructionAlert()">Resume</button>
+            <button class="top-bar-button" onclick="underConstructionAlert()">Links</button>
+            <button class="top-bar-button" onclick="underConstructionAlert()">Contact Me</button>
         </div>
     </div>
     <div id="main-body">
         <img id="main-body-background" src="./Assets/contour.png" alt="contour">
         <div id="main-body-text">
             <h1>Greetings.</h1>
-            <h2>I am Boyang Yu, a programmer, designer, artist, and student.</h2>
+            <h2>I am Boyang Yu, a software developer, designer, artist, and student.</h2>
         </div>
         <img id="boyang-photo" src="./Assets/Boyang.jpg" alt="Boyang Photo">
         </img>
@@ -44,25 +44,62 @@
     </div>
     <div id="about-me">
         <div id="about-me-text">
-            <h1>Hi, My Name Is Boyang Yu,</h1>
-            <p>
-                An Undergraduate student majoring
-                in Materials Science & Engineering, at UIUC.
-            </p>
+            <h1>Hello there, My Name Is Boyang Yu,</h1>
+            <h3>
+                and I am an Undergraduate student majoring
+                in Materials Science & Engineering, and minoring in Computer Science, at UIUC.
+            </h3>
             <br>
             <p>
-                I am a sophomore at the University of Illinois at Urbana-Champaign. I started self-learning
-                programming and software development during highschool.
-                I am able to code with Java, and C#. I also just started learning web design in 2021, and I am able create
-                websites with HTML 5, CSS, and Javascript. (Including this site!) <br> <br>
-                Besides coding and learning, I also do 3D Modeling and sometimes Digital Art. Using 3DS Max, Blender,
-                and Photoshop, I have been able to create 3D models, textures, images, and other assets usable in software
-                and video game developmenmt. 
+                • I enjoy coding and working on projects related to coding (Including this website!) <br> <br>
+
+                • Besides coding and learning, I also do 3D Modeling and sometimes Digital Art. <br> <br>
+
+                • When I am not working on any big projects, you might see me: <br> 
+                <div id="past-times" style="padding-left:2.5% ;">
+                    Playing video games <br>
+                    Browsing youtube <br>
+                    Watching anime <br>
+                    Jogging <br>
+                    Or just surfing the internet <br>
+                </div>
             </p>
         </div>
     </div>
+    <div id="learn-more-2">
+        <div id="down-arrow">
+            <img class="down-arrow-imgs"
+            src="./Assets/DownArrowUnlit.png" alt="Down Arrow unlit">
+            <img class="down-arrow-imgs"
+            src="./Assets/DownArrowAnimated.png" onclick="jumpToSkills()"alt="Down Arrow Animated">
+        </div>
+        
+    </div>
     <div id="skills">
-        <span>WHAT <p>OKOK</p> WHAT</span>
+        <div class="skills-text">
+            <h1>My Skills</h1>
+            <div id="skills-programming" style="position: absolute; top: 100%;">
+                <h3>- Programming Language & Tools</h3>
+            <p>
+                • Java <br>
+                • C# <br>
+                • Javascript <br>
+                • Git <br>
+                • HTML5 <br>
+                • CSS <br>
+                • React <br>
+                • Unity <br>
+            </p>
+            </div>
+            <div id="skills-others" style="position: absolute; top: 100%; left: 30%;">
+                <h3>- 3D Modeling & Digital Imaging</h3>
+            <p>
+                • 3DS Max <br>
+                • Blender <br>
+                • Photoshop <br>
+            </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
