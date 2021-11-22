@@ -11,6 +11,9 @@ html {
     font-family: Montserrat-Light;
     scroll-behavior: smooth;
 }
+a {
+    color: hsl(0, 0%, 100%);
+}
 #top-bar {
     float: left;
     font-size: 1.6rem;
